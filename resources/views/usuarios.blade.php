@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container p-2">
+     <div class="container p-2">
         <div class="row justify-content-center p-2">
             <div class="col-md-8">
                 <div class="card">
@@ -19,7 +19,7 @@
                         <h4>Olá, {{ auth()->user()->name }}.</h4>
                     </div>
                     
-                    {{-- {{dd(auth()->user()->adm)}} --}}
+                   
                     @if(auth()->user()->adm == 1)
                     <table class="table table-striped text-center ">
                         <thead>
@@ -31,7 +31,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($users as $user)
+                            @foreach ($usuarios as $user)
                                 <tr>
                                     <th scope="row">{{ $user->id }}</th>
                                     <td>{{ $user->name }}</td>
@@ -45,5 +45,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
+   
 @endsection

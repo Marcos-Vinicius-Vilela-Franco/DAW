@@ -18,7 +18,7 @@
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>Essas credenciais não correspondem aos nossos registros.</strong>
+                                        <strong>Email ou senha incorreto.</strong>
                                     </span>
                                 @enderror
                            
@@ -52,15 +52,11 @@
 
                         
                             
-                                <button type="submit" class="btn btn-lg btn-primary btn-block">
+                                <button type="submit" class="btn btn-lg btn-primary btn-block mb-2">
                                     {{ __('Login') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Esqueceu sua senha?') }}
-                                    </a>
-                                @endif
+                            
+                               
                                 <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
                         
                     </form>

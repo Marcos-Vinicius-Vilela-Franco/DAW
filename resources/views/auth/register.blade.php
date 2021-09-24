@@ -33,7 +33,7 @@
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>E-mail já cadastrado</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -47,7 +47,7 @@
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                        <strong>As  senhas não correspondem ou não atendem o limite mínimo de 8 caracteres.</strong>
                                     </span>
                                 @enderror
                             </div>
@@ -60,7 +60,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-                      
+                       
 
                         <div class="form-group row p-1">
                             <div class="col-md-6 offset-md-4 ">
